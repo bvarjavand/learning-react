@@ -10,7 +10,8 @@ module.exports = {
 		]},
 		output: {
 			path: path.resolve(__dirname, "dist"),	//where to put output (__dirname is the current directory)
-			filename: "index_bundle.js"			//can now be referenced at app/dist/index_bundle.js
+			filename: "index_bundle.js",		//can now be referenced at app/dist/index_bundle.js
+			publicPath: '/',
 		},
 		devServer: {
 	    historyApiFallback: true,
